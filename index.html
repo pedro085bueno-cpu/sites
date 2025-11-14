@@ -1,33 +1,127 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>TinyUSB</title>
-    <script src="serial.js"></script>
-    <script src="application.js"></script>
-    <link rel="stylesheet" href="application.css">
-  </head>
-  <body>
-    <div class="main-content">
-      <h1>TinyUSB - WebUSB Serial Example</h1>
-      <div class="connect-container">
-        <button id="connect" class="button black">Connect</button>
-        <span id="status"></span>
-      </div>
-      <div class="container">
-        <div class="sender">
-          <div class="lines-header">Sender</div>
-          <div class="lines-body">
-            <div id="sender_lines" class="lines"></div>
-            <input id="command_line" class="command-line" placeholder="Start typing ...." />
-          </div>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Segurança Pública no Brasil</title>
+    <style>
+        body { font-family: Arial, Helvetica, sans-serif; background: #e8f0fa; margin: 0; }
+        header { background: #133a5c; color: white; padding: 35px 0 18px; text-align: center; }
+        nav { background: #206191; padding: 14px; }
+        nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; }
+        section { max-width: 970px; margin: 40px auto; background: white; padding: 32px; border-radius: 10px; box-shadow: 0 0 10px #bcd; margin-bottom: 30px;}
+        h2 { color: #205181; margin-top: 0; }
+        ul, ol { margin-bottom: 16px; }
+        img { border-radius: 7px; box-shadow: 0 0 7px #aaa; margin: 15px 0; max-width: 98%; display: block; }
+        .img-row { display: flex; gap: 18px; flex-wrap: wrap; margin: 10px 0; }
+        .img-row img { width: 48%; }
+        footer { background: #206191; color: white; text-align: center; padding: 16px 0; margin-top: 40px; }
+        .box { border-left: 4px solid #205181; padding-left: 20px; margin-bottom: 20px; background: #f4faff; }
+        .subtitulo { color: #133a5c; font-weight: bold; margin-top: 28px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portal Explicativo da Segurança Pública</h1>
+        <p><b>Saiba tudo sobre proteção, cidadania e prevenção!</b></p>
+    </header>
+    <nav>
+        <a href="#conceito">Conceito</a>
+        <a href="#orgaos">Órgãos</a>
+        <a href="#acoes">Principais Ações</a>
+        <a href="#desafios">Desafios</a>
+        <a href="#dicas">Dicas</a>
+        <a href="#referencias">Referências</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <section id="conceito">
+        <h2>O que é Segurança Pública?</h2>
+        <div class="box">
+            Segurança pública é o conjunto de políticas, medidas e ações desenvolvidas pelo Estado para garantir a ordem, defender os direitos individuais e coletivos, proteger vidas e patrimônios, além de promover o bem-estar social. Engloba o trabalho de diferentes órgãos como polícias, bombeiros, guardas e órgãos civis.
         </div>
-        <div class="receiver">
-          <div class="lines-header">Receiver</div>
-          <div class="lines-body">
-            <div id="receiver_lines" class="lines"></div>
-          </div>
+        <div class="img-row">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Policiais em patrulha">
+            <img src="https://img.freepik.com/fotos-premium/bombeiro-atuando-socorro_273609-728.jpg?w=800" alt="Bombeiros em ação">
         </div>
-      </div>
-    </div>
-  </body>
+    </section>
+    <section id="orgaos">
+        <h2>Órgãos que atuam na Segurança Pública</h2>
+        <ul>
+            <li class="subtitulo">Polícia Militar:</li>
+            <div class="box">
+                Responsável pelo policiamento ostensivo, atua na prevenção de crimes, controle de manifestações públicas e manutenção da ordem.
+            </div>
+            <li class="subtitulo">Polícia Civil:</li>
+            <div class="box">
+                Foca na investigação de crimes, registro de ocorrências, elaboração de inquéritos e trabalho pericial.
+            </div>
+            <li class="subtitulo">Polícia Federal:</li>
+            <div class="box">
+                Realiza investigações a nível nacional, combate crimes federais, fiscalização de fronteiras e defesa do patrimônio público federal.
+            </div>
+            <li class="subtitulo">Corpo de Bombeiros:</li>
+            <div class="box">
+                Executa atividades de prevenção e combate a incêndios, resgate, primeiros socorros e salvamentos diversos.
+            </div>
+            <li class="subtitulo">Guarda Municipal:</li>
+            <div class="box">
+                Presente em alguns municípios, é responsável principalmente pela proteção de bens, serviços e instalações municipais.
+            </div>
+        </ul>
+        <div class="img-row">
+            <img src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?auto=format&fit=crop&w=800&q=80" alt="Viatura policial">
+            <img src="https://img.freepik.com/fotos-gratis/foto-guarda-municipal-municipio_74190-2072.jpg?w=800" alt="Guarda Municipal">
+        </div>
+    </section>
+    <section id="acoes">
+        <h2>Principais Ações da Segurança Pública</h2>
+        <ol>
+            <li>Policiamento preventivo, ostensivo e investigativo</li>
+            <li>Resgate e atendimento emergencial (bombeiros e SAMU)</li>
+            <li>Fiscalização de trânsito e prevenção de acidentes</li>
+            <li>Campanhas educativas e atividades comunitárias</li>
+            <li>Combate à violência doméstica e ao crime organizado</li>
+        </ol>
+        <img src="https://img.freepik.com/fotos-gratis/campanha-educativa-seguranca-publica_186382-1268.jpg?w=800" alt="Campanha Educativa">
+    </section>
+    <section id="desafios">
+        <h2>Desafios atuais da Segurança Pública</h2>
+        <ul>
+            <li>Crescimento da criminalidade nas grandes cidades</li>
+            <li>Superlotação do sistema prisional</li>
+            <li>Combate ao tráfico de drogas e armas</li>
+            <li>Violência policial e busca por atuação ética</li>
+            <li>Falta de equipamentos, treinamento e valorização dos profissionais</li>
+        </ul>
+        <img src="https://img.freepik.com/fotos-gratis/cameras-monitoramento-seguranca-urbana_53876-126689.jpg?w=800" alt="Câmeras de segurança como desafio e solução">
+    </section>
+    <section id="dicas">
+        <h2>Dicas de Segurança para a População</h2>
+        <ul>
+            <li>Evite usar celular em locais públicos muito movimentados</li>
+            <li>Saia sempre acompanhado à noite, evite lugares isolados</li>
+            <li>Tranque portas e janelas antes de dormir ou sair de casa</li>
+            <li>Não compartilhe informações pessoais com desconhecidos</li>
+            <li>Participe de redes de vizinhos para comunicação rápida</li>
+            <li>Em caso de emergência, acione <b>190</b> (polícia), <b>192</b> (SAMU) ou <b>193</b> (bombeiros)</li>
+        </ul>
+        <img src="https://img.freepik.com/fotos-gratis/teclado-emergencia-seguranca-casa_74190-2249.jpg?w=800" alt="Segurança residencial">
+    </section>
+    <section id="referencias">
+        <h2>Referências e Leitura complementar</h2>
+        <ul>
+            <li>Leis e normas: Constituição Federal, Lei de Segurança Pública</li>
+            <li>Sites oficiais: Ministério da Justiça, Portal da Segurança Pública Nacional</li>
+            <li>Livros: "Polícia, Democracia e Sociedade" (Luiz Eduardo Soares)</li>
+            <li>Artigos e reportagens em portais de notícia e revistas especializadas</li>
+        </ul>
+    </section>
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Envie dúvidas ou sugestões para <a href="mailto:segurancapublica@exemplo.com">segurancapublica@exemplo.com</a></p>
+        <p>Acompanhe nossos canais e participe dos fóruns de discussão sobre segurança!</p>
+    </section>
+    <footer>
+        &copy; 2025 Portal Explicativo Segurança Pública | Imagens: Unsplash & Freepik | Todos os direitos reservados.
+    </footer>
+</body>
 </html>
